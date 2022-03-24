@@ -1,38 +1,244 @@
-.App {
+/* homepage */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo img{
+  padding:0 35px;
+}
+
+.navbar{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #ff499e;
+}
+.navbar li{
+    display:inline;
+}
+
+.navbar li a {
+  color: white;
+  font-size: 1.7em;
+
+}
+
+.navbar a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+
+} 
+
+
+
+.header {
+  width: 100%;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.textHeader{
+  color: #779be7;
+  padding: 5%;
+  font-size: x-large;
+}
+
+
+.featured{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em 0 2em;
+    margin-bottom: 2em;
+    max-width: 100%;
+    /*width: 100%; */
+}
+
+.middleimg{
+width: 10%;
+}
+
+.featured img{
+  width: 25%;
+  max-width: 20%;
+  height: auto;
+  padding: 0 1em 0 1em ;
+  margin: 0 1em 0 1em;
+}
+
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 50px;
   text-align: center;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Set a specific color for each brand */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Facebook */
+.fa-facebook {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-twitter {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-linkedin {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #ff499e;
+  color: white;
+}
+
+#copyright{
+  color: black;
+  margin-top: 1em;
+}
+
+/* contact page */
+
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+.container{
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+
+.contact-box{
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* .left{
+  background: url("images/profselfp.png") no-repeat center;
+  background-size: cover;
+  height: 100%;
+} */
+
+.right{
+  padding: 25px 40px;
+}
+
+h2{
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+h2:after{
+  content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+}
+
+.field{
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+
+textarea{
+  min-height: 150px;
+}
+
+.btn{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #779be7;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+/* product page */
+
+.productsContainer {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+.productImages {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 2em;
+padding-bottom: 3rem;
+justify-content: space-evenly;
+
+ /* display: flex;
+flex-direction: row;
+flex-wrap: wrap; */
+}
+
+/* .productImages:hover{
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5); 
+transform: scale(1.5); 
+} */
+
+productImages h5 {
+display: block;
+font-size: 0.83em;
+margin-block-start: 1.67em;
+margin-block-end: 1.67em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
 }

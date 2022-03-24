@@ -1,11 +1,9 @@
 import React from 'react'; 
-import berryLogo from 
-
 function nav(){
     return(
         <>
             <nav className="navbar">
-                    <img src={berryLogo} alt="strawberry logo"/>
+                    <img src='./ecomPics/berryLogo.png' alt="strawberry logo"/>
                     <ul>
                         <li> <a href="index.html">Home</a> </li>
                         <li> <a href="product.html">Products</a> </li>
