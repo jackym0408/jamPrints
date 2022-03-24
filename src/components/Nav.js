@@ -1,9 +1,10 @@
+import React from 'react'; 
 import berryLogo from 
 
 function nav(){
     return(
         <>
-            <nav className="navbar"
+            <nav className="navbar">
                     <img src={berryLogo} alt="strawberry logo"/>
                     <ul>
                         <li> <a href="index.html">Home</a> </li>
