@@ -39,8 +39,6 @@ body{
 
 } 
 
-
-
 .header {
   width: 100%;
   object-fit: contain;
@@ -94,19 +92,19 @@ width: 10%;
 /* Set a specific color for each brand */
 
 /* Facebook */
-.fa-facebook {
+.facebook {
   color: white;
 }
 
-.fa-twitter {
+.twitter {
   color: white;
 }
 
-.fa-linkedin {
+.linkedin {
   color: white;
 }
 
-.fa-instagram {
+.instagram {
   color: white;
 }
 
@@ -118,7 +116,7 @@ footer {
 }
 
 #copyright{
-  color: black;
+  color: white;
   margin-top: 1em;
 }
 
@@ -151,11 +149,11 @@ body{
   background-color: #fff;
 }
 
-/* .left{
-  background: url("images/profselfp.png") no-repeat center;
+.left{
+  background: no-repeat center;
   background-size: cover;
   height: 100%;
-} */
+} 
 
 .right{
   padding: 25px 40px;
