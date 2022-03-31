@@ -6,7 +6,7 @@ function nav(){
     return(
         <>
             <nav className="navbar">
-                    <img src='./ecomPics/berryLogo.png' alt="strawberry logo"/>
+                    <img className='navlogo' src='./ecomPics/berryLogo.png' alt="strawberry logo"/>
                     <ul>
                         <li> <Link to="/">Home</Link> </li>
                         <li> <Link to="/product">Products</Link> </li>
