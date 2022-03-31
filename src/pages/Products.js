@@ -24,6 +24,7 @@ export default class Products extends Component {
   render() {
     return (
       <>
+      <div className='filtercontain'>
       <button className='filterbutton' onClick={this.jamfilter(100)}>
         {'more than $100'}
       </button>
@@ -43,6 +44,7 @@ export default class Products extends Component {
       <button className='filterbutton' onClick={this.jamfilter('original')}>
         {'originals'}
       </button>
+      </div>
 
       
         <div className="productsContainer">
