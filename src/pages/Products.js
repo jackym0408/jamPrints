@@ -1,81 +1,37 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
 export default class Products extends Component {
+  state = {
+    originalProductData: [],
+    productData: [],
+    type: "Reset",
+
+  };
+
+  async componentDidMount() {
+    await axios.get("/api/products").then((res) => {
+      //when deploying change url to '/api/Products'
+      this.setState({ productData: res.data, originalProductData: res.data });
+      //if heroku dies type 'heroku restart' in terminal
+    });
+  }
   render() {
     return (
       <>
         <div className="productsContainer">
-        <div className="productImages">
-        <img src="./ecomPics/slowdancing.png" alt="marcy redraw" width="300" height="auto"/>
-        <p>Marceline Redraw</p>
-        <h5>--Price--</h5>
-    </div>
-
-    <div className="productImages">
-      <img src="./ecomPics/beePuppy.jpg" alt="screenshot" width="300" height="auto"/>
-      <p>Marceline Redraw</p>
-      <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/bmo.jpg" alt="bmo screenshot" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>  
-
-  <div className="productImages">
-    <img src="./ecomPics/froggyBday.png" alt="demon slayer screenshot" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/drawingH.jpg" alt="hignacio drawing" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/appa.png" alt="hignacio drawing" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div class="productImages">
-    <img src="./ecomPics/howlStar.jpg" alt="howl screenshot" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/puppycatFinished.jpg" alt="pupycat drawing" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/usagiDraw.png" alt="usagi redraw" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/marcy.png" alt="usagi redraw" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/pinkArt2.jpg" alt="usagi redraw" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
-
-  <div className="productImages">
-    <img src="./ecomPics/gromFinal.png" alt="usagi redraw" width="300" height="auto"/>
-    <p>Marceline Redraw</p>
-    <h5>--Price--</h5>
-  </div>
+        {
+          this.state.productData.map((card) => {
+            return(
+              <div className="productImages">
+                <img src={card.image} alt={card.product_name} width="300" height="auto"/>
+                <p>{card.product_name}</p>
+                <p>{card.desc_product}</p>
+                <h5>${card.price}</h5>
+              </div>
+            )
+          })
+        }
 
 </div>
       </>

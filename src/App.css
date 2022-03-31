@@ -39,11 +39,65 @@ body{
 
 } 
 
-.header {
+/* .header {
   width: 100%;
   object-fit: contain;
   background-repeat: no-repeat;
+} */
+
+.carousel{
+  overflow: hidden;
 }
+
+.inner{
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carousel-item{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero1{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero2{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero3{
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.indicators{
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button{
+  margin: 5px;
+  color: pink;
+}
+
+.indicators > button.active{
+  background-color: green;
+  color: white
+} 
 
 .textHeader{
   color: #779be7;
@@ -114,6 +168,11 @@ footer {
   background-color: #ff499e;
   color: white;
 }
+
+a:visited { 
+  text-decoration: none; 
+  color: white; 
+ }
 
 #copyright{
   color: white;
