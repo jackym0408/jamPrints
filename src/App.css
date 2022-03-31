@@ -93,12 +93,16 @@ body{
 }
 
 .indicators > button{
+  background-color: #ffb5d7;
+  color: #fff;
+  border: none;
   margin: 5px;
-  color: pink;
+  width: 5%;
+  padding: 10px 32px;
 }
 
 .indicators > button.active{
-  background-color: green;
+  background-color: #aadbff;
   color: white
 } 
 
