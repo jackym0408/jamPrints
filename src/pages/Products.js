@@ -6,7 +6,6 @@ export default class Products extends Component {
     originalProductData: [],
     productData: [],
     type: "Reset",
-
   };
 
   async componentDidMount() {
@@ -21,6 +20,7 @@ export default class Products extends Component {
       <>
         <div className="productsContainer">
         {
+          //.map
           this.state.productData.map((card) => {
             return(
               <div className="productImages">
