@@ -10,9 +10,9 @@ function Homepage(){
     return(
         <>
             <Carousel> 
-                <CarouselItem> <img className='hero1' src='./ecomPics/heroPage1.png'/> </CarouselItem>
-                <CarouselItem> <img className='hero2' src='./ecomPics/saleHero.png'/>  </CarouselItem>
-                <CarouselItem> <img className='hero3' src='./ecomPics/heroProduct.png'/>  </CarouselItem>
+                <CarouselItem> <img className='hero1' alt="page1" src='./ecomPics/heroPage1.png'/> </CarouselItem>
+                <CarouselItem> <img className='hero2' alt="sale page" src='./ecomPics/saleHero.png'/>  </CarouselItem>
+                <CarouselItem> <img className='hero3' alt="mockup" src='./ecomPics/heroProduct.png'/>  </CarouselItem>
             </Carousel>
     
             <div className="textHeader">
