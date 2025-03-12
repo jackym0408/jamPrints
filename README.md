@@ -78,3 +78,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Filter and server were removed will be updated in the future. It now uses fewer images
 - To run use npm run dev
 - will be deployed using netlfy link will be updated later 
+- https://jamprints.netlify.app/ 

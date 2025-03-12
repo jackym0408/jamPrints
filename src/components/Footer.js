@@ -4,7 +4,8 @@ function footer(){
     return(
         <>
             <footer>
-                <a href="https://www.facebook.com/" className="fa fa-facebook" ></a>
+                {/* eslint-disable jsx-a11y/anchor-has-content */}
+                <a alt="facebook link" href="https://www.facebook.com/" className="fa fa-facebook" ></a>
                 <a href="https://twitter.com/" className="fa fa-twitter" ></a>
                 <a href="http://www.linkedin.com/" className="fa fa-linkedin" ></a>
                 <a href="https://www.instagram.com/" className="fa fa-instagram"></a> 
