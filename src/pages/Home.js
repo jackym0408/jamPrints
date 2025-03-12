@@ -21,10 +21,12 @@ function Homepage(){
                 </center>
             </div>
         
-            <section className="featured">
-                <img className="featImg" src="./ecomPics/gromFinal.png " alt="two girl dancing" />
-                <img className="featImg" src="./ecomPics/pinkArt2.jpg" alt="pink fashion" id="middleimg"/>
-                <img className="featImg" src="./ecomPics/slowdancing2.jpg " alt="two girl dancing again" />
+            <section className="products">
+            <div className='prodContainer'> 
+                <img className="proImg" src="./ecomPics/gromFinal.png " alt="two girl dancing" />
+                <img className="proImg" src="./ecomPics/pinkArt2.jpg" alt="pink fashion" id="middleimg"/>
+                <img className="proImg" src="./ecomPics/slowdancing2.jpg " alt="two girl dancing again" />
+            </div>
             </section>
         
         </>
