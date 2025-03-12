@@ -302,4 +302,5 @@ h1.prodHeader {
   margin: 10px 20px;
   height: 350px;
   aspect-ratio: 1;
+  object-fit: cover;
 }
